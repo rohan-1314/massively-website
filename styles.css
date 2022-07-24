@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+body {
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Merriweather, Georgia, serif;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.container {
+    background-color: #1e252d;
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: 0.5;
+}
+
+.hr-text:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 0.5em;
+    line-height: 1.5em;
+    color: #818078;
+    background-color: #fcfcfa;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #91beeb;
+    opacity: 0.5;
+}
+
+.social {
+    padding: 10px;
+    color: #212931;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 80px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 64px;
+    color: #212931;
+}
+
+h3 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 12.8px;
+    color: #717981;
+}
+
+p {
+    text-align: center;
+    line-height: 1;
+    margin: 10%;
+}
+
+header {
+    color: #eeeeee;
+}
+
+#main {
+    background-color: #fff;
+    text-align: center;
+    margin: 10%;
+}
+
+#arrow {
+    position: relative;
+    padding: 10% 50% 10% 50%;
+    width: 20vw;
+    height: auto;
+}
+
+.first-button {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+.msg {
+    display: flex;
+    justify-content: center;
+}
+
+b {
+    margin: 10%;
+}
+
+form label {
+    display: flex;
+    justify-content: left;
+    margin-left: 20%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 12px;
+    border-width: 1px;
+    background-color: #ffffff;
+}
+
+form input {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3%;
+    border: 1px solid;
+    color: #50575f;
+}
+
+textarea {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3%;
+    border: 1px solid;
+    color: #50575f;
+}
+
+.submit {
+    padding: 10px 20px;
+    font-size: 12px;
+    border-width: 1px;
+    background-color: #ffffff;
+}
+
+.last-txt {
+    color: #555758
+}
+
+.submit:hover {
+    color: white;
+    background-color: #1e252d;
+}
+
+button:hover {
+    color: white;
+    background-color: #1e252d;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5%;
+}
+
+.page-but {
+    padding: 5%;
+    color: #1e252d;
+}
+
+.page-but:hover {
+    color: #ffffff;
+    background-color: #1e252d;
+}
+
+footer p {
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 3% 0;
+}
+
+.box {
+    max-width: fit-content;
+    padding: 10%;
+}
+
+#grid-footer {
+    background-color: #eeeeee;
+    margin-bottom: 0;
+}
+
+footer {
+    color: #555758;
+    background-color: #eeeeee;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* height:auto; */
+}
+
+#nxt-pg {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width:699px) {
+    h1 {
+        font-size: 50px;
+    }
+    .first-button {
+        margin: 10%;
+    }
+}
+
+@media only screen and (min-width:700px) {
+    #main-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box {
+        border-bottom: 0.25px solid;
+        border-right: 0.25px solid;
+        border-color: #969594;
+        max-width: 100%;
+    }
+    #grid-footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .last-txt {
+        display: inline-block;
+        margin: 10%;
+    }
+    .second-column div {
+        margin: 10%;
+    }
+    .form {
+        margin-top: 10%;
+    }
+    .form div {
+        margin: 10%;
+    }
+    .page-but {
+        padding: 3%;
+    }
+}
